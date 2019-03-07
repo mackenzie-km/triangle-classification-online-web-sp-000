@@ -20,6 +20,7 @@ def valid?
     false
   elsif @length_array.detect{|e| e <= 0}
     false
+    binding.pry 
 end 
 end
 
