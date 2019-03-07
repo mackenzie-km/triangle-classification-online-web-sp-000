@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :length1, :length2, :length3
+  attr_accessor :length1, :length2, :length3, :length_array
   
   class TriangleError < StandardError
     def message 
@@ -16,7 +16,7 @@ end
 
 def valid?
    if (@length1 + @length2 <= @length3) ||  (@length2 + @length3 <= @length1) ||  (@length1 + @length3 <= @length2) 
-     combination(n) {|c| block}
+     @length_array.combination(n) {|c| block}
     false
   elsif @length_array.detect{|e| e <= 0}
     false
