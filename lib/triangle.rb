@@ -16,7 +16,7 @@ end
 
 def valid?
    if (@length1 + @length2 <= @length3) ||  (@length2 + @length3 <= @length1) ||  (@length1 + @length3 <= @length2) 
-     @length_array.combination(3) {|c| block}
+     @length_array.combination(3) {|c| }
      
     false
   elsif @length_array.detect{|e| e <= 0}
