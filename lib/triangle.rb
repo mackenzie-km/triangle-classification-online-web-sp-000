@@ -6,10 +6,10 @@ def initialize(length1, length2, length3)
   @length3 = length3
 end 
 def kind 
-  if 
+  if (@length1 + @length2 > @length3) ||  (@length2 + @length2 > @length3) ||  (@length1 + @length2 > @length3) 
   elsif @length1 == @length2 == @length3 
     :equilateral
-  elsif @length1 == @length2 || @length2 == @length3 || @length3 == @length1 
+  elsif (@length1 == @length2) || (@length2 == @length3) || (@length3 == @length1) 
     :isosceles 
   else 
     :scalene
