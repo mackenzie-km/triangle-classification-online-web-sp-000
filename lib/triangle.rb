@@ -18,9 +18,8 @@ def valid?
     false
   elsif (@length1 || @length2 || @length3) <= 0
     false
-  else 
-  end 
 end 
+end
 
 def kind 
   if valid? = false 
