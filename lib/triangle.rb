@@ -17,7 +17,7 @@ def initialize(length1, length2, length3)
 end 
 
 def save 
-  @length_array << length 
+  @length_array << @length 
 end 
 
 def valid?
