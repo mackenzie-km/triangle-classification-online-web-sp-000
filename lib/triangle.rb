@@ -16,7 +16,6 @@ end
 
 def valid?
    if (@length1 + @length2 <= @length3) ||  (@length2 + @length3 <= @length1) ||  (@length1 + @length3 <= @length2) 
-     @length_array.each do 
     false
   elsif (@length1 || @length2 || @length3) <= 0
     false
