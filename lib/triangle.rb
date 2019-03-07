@@ -1,8 +1,7 @@
 class Triangle
   attr_accessor :length1, :length2, :length3
   
-  class TriangleError
-    TriangleError < StandardError
+  class TriangleError < StandardError
     def message 
       "This is not a real triangle!"
     end 
