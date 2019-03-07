@@ -22,7 +22,7 @@ end
 end
 
 def kind 
-  if valid? = false 
+if valid? == false 
     raise TriangleError
   elsif (@length1 == @length2 && @length1 == @length3)
     :equilateral
