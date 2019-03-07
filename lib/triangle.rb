@@ -20,6 +20,7 @@ def valid?
     false
   else 
     true
+  end 
 end 
 
 def kind 
