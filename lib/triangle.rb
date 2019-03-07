@@ -14,7 +14,7 @@ def initialize(length1, length2, length3)
   @length_array = [@length1, @length2, @length3]
 end 
 
-binding.pry 
+
 def valid?
    if @length_array.combination(3).to_a {|c| c[1] + c[2] <= c[3]} != nil
     false
