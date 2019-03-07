@@ -17,7 +17,7 @@ end
 def valid?
    if (@length1 + @length2 <= @length3) ||  (@length2 + @length3 <= @length1) ||  (@length1 + @length3 <= @length2) 
     false
-  elsif (@length1 || @length2 || @length3) <= 0
+  elsif @length_array.detect{|e| <= 0}
     false
 end 
 end
