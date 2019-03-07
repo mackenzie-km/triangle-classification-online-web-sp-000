@@ -18,8 +18,6 @@ def valid?
     false
   elsif (@length1 || @length2 || @length3) <= 0
     false
-  else 
-    true
   end 
 end 
 
