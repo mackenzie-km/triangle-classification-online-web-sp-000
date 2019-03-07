@@ -16,7 +16,6 @@ end
 
 def valid?
    if @length_array.combination(3).to_a {|c| c[1] + c[2] <= c[3]} != nil
-     
     false
   elsif @length_array.detect{|e| e <= 0}
     false
