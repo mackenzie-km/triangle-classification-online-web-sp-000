@@ -9,20 +9,14 @@ class Triangle
   
 def initialize(length1, length2, length3)
   @length1 = length1
-  save
   @length2 = length2
-  save 
   @length3 = length3
-  save 
-end 
-
-def save 
-  @length_array << @length 
+  @length_array = [@length1, @length2, @length3]
 end 
 
 def valid?
    if (@length1 + @length2 <= @length3) ||  (@length2 + @length3 <= @length1) ||  (@length1 + @length3 <= @length2) 
-     
+     @length_array.each do 
     false
   elsif (@length1 || @length2 || @length3) <= 0
     false
