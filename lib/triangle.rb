@@ -4,6 +4,7 @@ class Triangle
   class TriangleError
     TriangleError < StandardError
     def message "This is not a real triangle!"
+    end 
   end 
   
 def initialize(length1, length2, length3)
