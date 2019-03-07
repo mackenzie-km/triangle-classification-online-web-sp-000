@@ -25,9 +25,9 @@ end
 def kind 
 if valid? == false 
     raise TriangleError
-  elsif @length_array.detect{|e| @length_array.count(e) = 3}
+  elsif @length_array.detect{|e| @length_array.count(e) == 3}
     :equilateral
-  elsif @length_array.detect{|e| @length_array.count(e) = 2}
+  elsif @length_array.detect{|e| @length_array.count(e) == 2}
     :isosceles 
   else 
     :scalene
